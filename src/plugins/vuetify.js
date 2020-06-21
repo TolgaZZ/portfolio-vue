@@ -2,13 +2,19 @@ import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
 import '@fortawesome/fontawesome-free/css/all.css' // Ensure you are using css-loader
 
+const MY_ICONS = {
+    Tlogo: '../assets/logo.svg',
+}
+
+
 Vue.use(Vuetify, {
     iconfont: 'md',
 });
 
 export default new Vuetify({
     icons: {
-        iconfont: 'fa',
+      values: MY_ICONS,
+      iconfont: 'fa',
     },
     theme: {
         themes: {

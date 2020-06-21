@@ -1,7 +1,17 @@
 <template>
   <nav>
     <v-app-bar flat color="secondary">
-    
+        <v-img
+              src="../assets/logo.svg"
+              height="45"
+              class="fill-height"
+              contain
+              position="absolute"
+            ></v-img>
+
+
+
+
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon class="primary--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-app-bar-title class="text-uppercase primary--text"></v-app-bar-title>
