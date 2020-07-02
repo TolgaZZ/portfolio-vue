@@ -28,7 +28,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-img src="../assets/wave.svg" class="mb-n10 secondary"></v-img>
+    <v-img src="../assets/wave.svg" class="mb-3 secondary"></v-img>
   </div>
 </template>
 

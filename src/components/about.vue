@@ -1,5 +1,5 @@
-<template>
-  <v-container class="primary mt-n15" fluid="true"  >
+<template >
+  <v-container class="primary mt-n15" fluid="true" id="about" >
     <v-row>
       <v-col cols="12" md="8"></v-col>
       <v-col cols="12" md="4">

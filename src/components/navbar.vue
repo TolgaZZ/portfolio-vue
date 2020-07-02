@@ -23,7 +23,7 @@
       <v-divider class="primary"></v-divider>
 
       <v-list dense nav>
-        <v-list-item v-for="item in items" :key="item.title" router :to="item.route">
+        <v-list-item v-for="item in items" :key="item.title" @click="$vuetify.goTo(`${item.href}`)">
           <v-list-item-icon>
             <v-icon color="primary">{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -43,10 +43,10 @@ export default {
   data() {
     return {
       items: [
-        { title: "About", icon: "fa fa-user", route: "@/components/about" },
-        { title: "Skills", icon: "fas fa-circle-notch", route: "@/components/about"  },
-        { title: "My Projects", icon: "mdi-folder-open", route: "@/components/projects"  },
-        { title: "Contacts", icon: "fas fa-id-card-alt", route: "@/components/contact"}
+        { title: "About", icon: "fa fa-user", href: "#about" },
+        { title: "Skills", icon: "fas fa-circle-notch", href: "#about" },
+        { title: "My Projects", icon: "mdi-folder-open", href: "#projects" },
+        { title: "Contacts", icon: "fas fa-id-card-alt", href: "#contact" }
       ],
 
       drawer: false
