@@ -21,7 +21,7 @@
               <h3 class="title primary--text mt-5">{{ projects[model].title }}</h3>
               <subtitle-2 class="primary--text">{{ projects[model].content }}</subtitle-2>
               <v-btn rounded color="secondary" dark><a :href="projects[model].github" target="_blank">Github link</a></v-btn>
-              <v-btn rounded color="secondary" dark class="ml-5"><a :href="projects[model].github" target="_blank"><a :href="projects[model].github">Demo</a></a></v-btn>
+              <v-btn rounded color="secondary" dark class="ml-5"><a :href="projects[model].demo" target="_blank">Demo</a></v-btn>
               
             </v-row>
           </v-sheet>
@@ -47,7 +47,8 @@ export default {
         content:
           'I made the exact replica of the game called "Doodle Jump", this project is made in Unity and uses C# I mainly focused on making this compatible for mobile as you needed to balance your screen to drag your character from left to right.  You can find this project on my Github page!',
         img: require("@/assets/projects/project2.png"),
-        github: "https://github.com/TolgaZZ/xamarinApp"
+        github: "https://github.com/TolgaZZ/xamarinApp",
+        demo: "https://apps.apple.com/nl/app/doodle-jump/id307727765"
       },
       {
         title: "Code up the homepage",
@@ -57,10 +58,10 @@ export default {
         github: "https://github.com/TolgaZZ/xamarinApp"
       },
       {
-        title: "Design video thumbnails",
+        title: "School Linkedin",
         content:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!",
-        img: require("@/assets/projects/project3.jpg"),
+          "Me and my 7 other classmates made a Linkedin for school, people can invite others to work with them on projects.",
+        img: require("@/assets/projects/project4.jpg"),
         github: "https://github.com/TolgaZZ/xamarinApp"
       },
       {
