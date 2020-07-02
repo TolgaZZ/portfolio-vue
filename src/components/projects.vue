@@ -20,8 +20,8 @@
             <v-row class="fill-height ma-5">
               <h3 class="title primary--text mt-5">{{ projects[model].title }}</h3>
               <subtitle-2 class="primary--text">{{ projects[model].content }}</subtitle-2>
-              <v-btn rounded color="secondary" dark><a :href="projects[model].github">Github link</a></v-btn>
-              <v-btn rounded color="secondary" dark class="ml-5"><a :href="projects[model].github"><a :href="projects[model].github">Demo</a></a></v-btn>
+              <v-btn rounded color="secondary" dark><a :href="projects[model].github" target="_blank">Github link</a></v-btn>
+              <v-btn rounded color="secondary" dark class="ml-5"><a :href="projects[model].github" target="_blank"><a :href="projects[model].github">Demo</a></a></v-btn>
               
             </v-row>
           </v-sheet>
